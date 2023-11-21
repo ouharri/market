@@ -1,9 +1,9 @@
 server:
-  port: 8082
+  port: 8083
 
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/marjane2
+    url: jdbc:postgresql://localhost:5432/market
     username: postgres
     password: Youcode@2023
     driver-class-name: org.postgresql.Driver
@@ -11,7 +11,7 @@ spring:
     change-log: classpath:db/changelog/db.changelog-master.yaml
   jpa:
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: update
     show-sql: true
     properties:
       hibernate:

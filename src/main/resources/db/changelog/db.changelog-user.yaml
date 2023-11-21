@@ -1,0 +1,33 @@
+databaseChangeLog:
+  - changeSet:
+      id: create_user_table
+      author: ouharri
+
+      changes:
+        - createTable:
+            tableName: _user
+            columns:
+              - column:
+                  name: id
+                  type: INTEGER
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+              - column:
+                  name: firstname
+                  type: VARCHAR(255)
+              - column:
+                  name: lastname
+                  type: VARCHAR(255)
+              - column:
+                  name: email
+                  type: VARCHAR(255)
+              - column:
+                  name: password
+                  type: VARCHAR(255)
+              - column:
+                  name: role
+                  type: VARCHAR(50)
+              - column:
+                  name: user_id
+                  type: INTEGER
